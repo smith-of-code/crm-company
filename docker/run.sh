@@ -5,7 +5,7 @@ then
 env_file=".env.$1"
 else
 
-echo "./run.sh  no param from ( prod, example, prod.armenia  )"
+echo "./run.sh  no param from ( prod, example  )"
 exit
 fi
 echo ../${env_file}
