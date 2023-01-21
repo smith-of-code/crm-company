@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css','resources/js/app.js'])
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=e04fcc9a-eb58-4127-9503-dca3e8849e67&lang=ru_RU" type="text/javascript">
+        </script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -31,5 +33,6 @@
                 {{ $slot }}
             </main>
         </div>
+{{--        @vite([])--}}
     </body>
 </html>

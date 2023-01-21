@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name')->comment('имя');
-            $table->string('email')->comment('email');
-            $table->string('logo')->comment('логотип');
-            $table->text('address')->comment('адрес');
+            $table->string('email')->nullable()->comment('email');
+            $table->string('logo')->nullable()->comment('логотип');
+            $table->text('address')->nullable()->comment('адрес');
             $table->timestamps();
         });
     }

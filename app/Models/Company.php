@@ -10,4 +10,15 @@ class Company extends Model
     use HasFactory;
 
     protected $table = 'companies';
+
+    protected $fillable=[
+        'name',
+        'email',
+        'address'
+    ];
+
+
+    public function workers(){
+        return $this->hasMany(Worker::class);
+    }
 }
