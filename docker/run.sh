@@ -25,6 +25,7 @@ docker exec ${APP_NAME}_fpm php artisan storage:link
 docker exec ${APP_NAME}_fpm php artisan key:generate
 docker exec ${APP_NAME}_fpm chmod -R 0777 storage
 docker exec ${APP_NAME}_fpm php artisan migrate
+docker exec ${APP_NAME}_fpm php artisan db:seed
 
 docker exec ${APP_NAME}_fpm npm i
 docker exec ${APP_NAME}_fpm npm run build
